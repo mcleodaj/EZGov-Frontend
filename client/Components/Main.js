@@ -10,6 +10,7 @@ const Main = React.createClass({
       <div >
         <Nav/>
         <div>
+          <MapContainer />
         </div>
       </div>
     );
