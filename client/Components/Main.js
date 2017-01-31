@@ -2,15 +2,15 @@
 
 import React from 'react';
 import Nav from './Nav';
-import MapContainer from './MapContainer';
+import BannersContainer from './BannersContainer';
 
 const Main = React.createClass({
   render() {
     return (
       <div >
         <Nav/>
-        <div>
-          <MapContainer />
+        <div className="container">
+          <BannersContainer />
         </div>
       </div>
     );

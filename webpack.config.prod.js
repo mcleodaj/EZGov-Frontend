@@ -23,7 +23,11 @@ module.exports = {
       compressor: {
         warnings: false
       }
-    })
+    }),
+    new webpack.ProvidePlugin({
+       $: "jquery",
+       jQuery: "jquery"
+   })
   ],
   module: {
     loaders: [
@@ -38,6 +42,11 @@ module.exports = {
       test: /\.styl$/,
       include: path.join(__dirname, 'client'),
       loader: 'style-loader!css-loader!stylus-loader'
+    },
+    // Images
+    {
+      test: /\.(png|jpg|)$/,
+      loader: 'url-loader?limit=200000'
     }
     ]
   }

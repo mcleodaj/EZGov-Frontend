@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 // import { Row, Col, Card } from 'antd';
 import Nav from './Nav';
 import Main from './Main';
-import MapContainer from './MapContainer';
+import BannersContainer from './BannersContainer';
 
 import * as billsActions from '../actions/billsActions';
 import * as votesActions from '../actions/votesActions';

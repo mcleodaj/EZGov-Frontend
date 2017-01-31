@@ -14,7 +14,12 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.ProvidePlugin({
+       $: "jquery",
+       jQuery: "jquery",
+       jquery: "jquery"
+   })
   ],
   module: {
     loaders: [
@@ -29,6 +34,11 @@ module.exports = {
       test: /\.styl$/,
       include: path.join(__dirname, 'client'),
       loader: 'style-loader!css-loader!stylus-loader'
+    },
+    // Images
+    {
+      test: /\.(png|jpg|)$/,
+      loader: 'url-loader?limit=200000'
     }
     ]
   }
