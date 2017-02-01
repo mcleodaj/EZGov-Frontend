@@ -7,6 +7,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 // Components
 import App from './Components/App'
 import BannersContainer from './Components/BannersContainer'
+import StateContainer from './Components/StateContainer'
 
 import store from './store'
 
@@ -15,6 +16,7 @@ const router = (
     <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={BannersContainer}></IndexRoute>
+        <Route path="/states" component={StateContainer}></Route>
       </Route>
     </Router>
   </Provider>

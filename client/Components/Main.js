@@ -3,14 +3,16 @@
 import React from 'react';
 import Nav from './Nav';
 import BannersContainer from './BannersContainer';
+import style from './main.css'
+
 
 const Main = React.createClass({
   render() {
     return (
       <div >
-        <Nav/>
+        <Nav {...this.props}/>
         <div className="container">
-          <BannersContainer />
+          {React.cloneElement(this.props.children, this.props)}
         </div>
       </div>
     );
