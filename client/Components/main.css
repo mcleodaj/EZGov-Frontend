@@ -1,3 +1,8 @@
+area{
+    display:block;
+    cursor:hand;
+}
+
 .grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -6,12 +11,18 @@
 .grayscale:hover {
   filter: none;
   -webkit-filter: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .grayscale:active {
   filter: none;
   -webkit-filter: none;
+}
+
+.shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shadow:active {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 

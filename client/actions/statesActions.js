@@ -13,3 +13,16 @@ export function fetchStates() {
       });
   };
 }
+
+export function fetchState(stateId) {
+  return function(dispatch) {
+    axios.get(`http://localhost:3000/v1/states/${stateId}`)
+      .then((response) => {
+        console.log(response);
+        dispatch({type: "FETCH_STATES_FULFILLED", payload: response.data});
+      })
+      .catch((err) => {
+        dispatch({type: "FETCH_STATES_REJECTED", payload: err});
+      });
+  };
+}

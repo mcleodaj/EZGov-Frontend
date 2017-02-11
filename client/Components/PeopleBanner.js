@@ -9,7 +9,7 @@ class PeopleBanner extends React.Component {
   render() {
     return (
       <Link to={`/people`}>
-        <img src={image} className="responsive-img grayscale"/>
+        <img src={image} className="responsive-img grayscale shadow"/>
       </Link>
     );
   }

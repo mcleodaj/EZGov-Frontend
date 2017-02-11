@@ -9,7 +9,7 @@ class BillBanner extends React.Component {
   render() {
     return (
       <Link to={`/bills`}>
-        <img src={image} className="responsive-img grayscale"/>
+        <img src={image} className="responsive-img grayscale shadow"/>
       </Link>
     );
   }
