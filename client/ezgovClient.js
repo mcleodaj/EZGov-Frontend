@@ -9,6 +9,7 @@ import App from './Components/App'
 import BannersContainer from './Components/BannersContainer'
 import State from './Components/State'
 import USMap from './Components/USMap'
+import BillContainer from './Components/BillContainer'
 import store from './store'
 
 const router = (
@@ -18,6 +19,7 @@ const router = (
         <IndexRoute component={BannersContainer}></IndexRoute>
         <Route path="/states" component={USMap}></Route>
         <Route path="/states/:stateId" component={State}></Route>
+        <Route path="/bills" component={BillContainer}></Route>
       </Route>
     </Router>
   </Provider>
