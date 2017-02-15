@@ -19,6 +19,9 @@ function mapStateToProps(state) {
     people: state.people,
     states: state.states,
     votes: state.votes,
+    bill: state.bill,
+    person: state.person,
+    stateInfo: state.stateInfo,
   };
 }
 

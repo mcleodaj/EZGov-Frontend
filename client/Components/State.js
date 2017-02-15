@@ -33,9 +33,9 @@ class State extends React.Component {
       return (
         <div>
           <h3>Senators</h3>
-            {this.createRowsWithPeople(this.props.states.states.people.slice(0, 2))}
+            {this.createRowsWithPeople(this.props.stateInfo.stateInfo.people.slice(0,2))}
           <h3>Representatives</h3>
-            {this.createRowsWithPeople(this.props.states.states.people.slice(2))}
+            {this.createRowsWithPeople(this.props.stateInfo.stateInfo.people.slice(2))}
         </div>
       );
     }

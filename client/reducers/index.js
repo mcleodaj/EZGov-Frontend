@@ -2,8 +2,11 @@
 import { combineReducers } from "redux";
 
 import bills from "./billsReducer";
+import bill from "./billReducer";
 import people from "./peopleReducer";
+import person from "./personReducer";
 import states from './statesReducer';
+import stateInfo from './stateInfoReducer';
 import votes from './votesReducer';
 
 export default combineReducers({
@@ -11,4 +14,7 @@ export default combineReducers({
   people,
   states,
   votes,
+  stateInfo,
+  person,
+  bill,
 });

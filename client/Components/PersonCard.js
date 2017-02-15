@@ -8,7 +8,7 @@ class PersonCard extends React.Component {
     return (
       <div className="card white darken-1">
         <div className="card-content black-text">
-          <Link to={`/person/${this.props.person.id}`}>
+          <Link to={`/people/${this.props.person.id}`}>
             <span className="card-title centered">{this.props.person.firstname} {this.props.person.lastname} </span>
           </Link>
         </div>
